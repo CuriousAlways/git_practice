@@ -1,0 +1,83 @@
+1. git init
+
+2. --- adding files and content ---
+
+3. git add <filename>
+   git commit -m <commit message>
+
+4. --- making some changes to files ---
+   git diff 
+   git add <filename>
+   git commit -m <commit message>
+   --- repeating the process 2 times ---
+
+5. --- making some changes to files ---
+   git checkout <filename>
+
+6. --- make some changes to files ---
+   git add <filename>
+   git reset --hard HEAD
+
+7. --- make some changes to files ---
+   git add <filename> 
+   git commit -m <commit message>
+   git revert HEAD 
+  
+8. --- make some changes to files ----
+   git status
+   git add <filename>
+   git status 
+   git commit -m <commit message>
+   git status 
+
+9. git log --all
+
+10. git log --grep='pattern'
+
+11. git branch feature1
+    git branch feature2
+    git branch
+    git branch -d feature2
+
+12. git checkout feature1
+    --- make some changes in file ---
+    git add <filename>
+    git commit -m <commit message>
+
+13. git checkout master
+    --- make some changes to file ---
+    git add <filename>
+    git commit -m <commit message>
+
+14. git merge feature1 
+    --- resolve conflict ---
+    git add <filename>
+    git commit -m <commit message>
+
+15. git checkout -b feature2
+    --- make some changes in file ---
+    git add <filename>
+    git commit -m <commit message>
+
+16. git checkout master
+    --- make some changes in file ---
+    git add <filename>
+    git commit -m <commit message>
+
+17. git checkout feature2
+    git rebase master
+    --- fix confict --- 
+    git add .
+    git rebase --continue
+
+19. --- make some changes to files ---
+    git stash
+    --- make some changes to files ---
+    git add .
+    git commit -m <commit message>
+    git stash pop
+
+    {optional : resolve conflict if poping stash leads to conflict}   
+
+    git add .
+    git commit -m <commit message>
