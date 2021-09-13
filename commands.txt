@@ -32,7 +32,7 @@
 
 9. git log --all
 
-10. git log --grep='pattern'
+10. git show <commit sha1>
 
 11. git branch feature1
     git branch feature2
